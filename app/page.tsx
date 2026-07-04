@@ -116,9 +116,10 @@ export default function Home() {
                 {Object.values(LOVE_TYPES)
                   .filter((t) => t.group === g)
                   .map((t) => (
-                    <div
+                    <Link
                       key={t.code}
-                      className="rounded-3xl border border-gray-100 bg-white p-5 text-center"
+                      href={`/result/${t.code}`}
+                      className="rounded-3xl border border-gray-100 bg-white p-5 text-center transition hover:-translate-y-0.5 hover:border-violet-200 hover:shadow-md active:scale-[0.98]"
                     >
                       <div className="flex justify-center">
                         <TypeAvatar type={t} size="sm" />
@@ -129,7 +130,7 @@ export default function Home() {
                       <p className="mt-1 text-[10px] font-bold tracking-[0.2em] text-gray-400">
                         {t.code}
                       </p>
-                    </div>
+                    </Link>
                   ))}
               </div>
             </div>
