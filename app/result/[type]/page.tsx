@@ -129,7 +129,7 @@ export default async function ResultPage(props: {
           <h2 className="text-lg font-black tracking-tight">
             <span className={meta.tintText}>#</span> あなたの恋愛スタイル
           </h2>
-          <p className="mt-4 text-[15px] leading-loose text-gray-700">
+          <p className="mt-4 text-[15px] leading-loose text-gray-900">
             {t.desc}
           </p>
         </section>
